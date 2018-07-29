@@ -6,6 +6,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { CustomFormsModule } from 'ng2-validation';
 
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
@@ -43,6 +44,7 @@ import { ProductService } from './product.service';
     ProductFormComponent
   ],
   imports: [
+    CustomFormsModule,
     FormsModule,
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
